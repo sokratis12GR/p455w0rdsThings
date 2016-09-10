@@ -1,0 +1,79 @@
+
+// For those who want the bleeding edge
+buildscript {
+    repositories {
+        jcenter()
+        maven {
+            name = "forge"
+            url = "http://files.minecraftforge.net/maven"
+        }
+    }
+    dependencies {
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.1-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle.forge'
+
+//sourceCompatibility = JavaVersion.VERSION_1_8
+//targetCompatibility = JavaVersion.VERSION_1_8
+
+srcCompat = JavaVersion.VERSION_1_8
+targetCompat = JavaVersion.VERSION_1_8
+
+version = "1.10.2-0.0.19a"
+group = "p455w0rd.p455w0rdsthings"
+archivesBaseName = "p455w0rdsthings"
+
+minecraft {
+    version = "1.10.2-12.18.1.2076"
+    runDir = "run"
+	
+	replaceIn "Globals.java"
+    replaceIn "package-info.java"
+	
+	replace "@version@", project.version
+    
+    // the mappings can be changed at any time, and must be in the following format.
+    // snapshot_YYYYMMDD   snapshot are built nightly.
+    // stable_#            stables are built at the discretion of the MCP team.
+    // Use non-default mappings at your own risk. they may not allways work.
+    // simply re-run your setup task after changing the mappings to update your workspace.
+    mappings = "stable_26"
+	//mappings = "snapshot_20160518"
+	useDepAts = true
+    // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
+}
+
+repositories {
+  maven { url "http://dvs1.progwml6.com/files/maven" }
+  maven { url "http://chickenbones.net/maven" }
+}
+
+dependencies {
+	deobfCompile "mezz.jei:jei_1.10.2:+"
+    //deobfCompile "codechicken:CodeChickenLib:1.9.4-2.0.2.37:deobf"
+}
+
+processResources
+{
+    inputs.property "version", project.version
+    inputs.property "mcversion", project.minecraft.version
+    from(sourceSets.main.resources.srcDirs) {
+        include 'mcmod.info'
+        expand 'version': project.version, 'mcversion': project.minecraft.version
+    }
+	from(sourceSets.main.resources.srcDirs) {
+        exclude 'mcmod.info'
+    }
+}
+jar {
+    manifest {
+	    attributes 'FMLCorePlugin': 'p455w0rd.p455w0rdsthings.lib.asm.CCLCorePlugin',
+		    'FMLCorePluginContainsFMLMod': 'true',
+			'FMLAT': 'p455w0rdsthings_at.cfg'
+	}
+}
+// def commonManifest = {
+//    attributes 'FMLCorePlugin': 'p455w0rd.p455w0rdsthings.lib.asm.CCLCorePlugin', 'FMLCorePluginContainsFMLMod': 'true'
+//    attributes 'FMLAT': 'p455w0rdsthings_at.cfg'
+// }
