@@ -1,0 +1,69 @@
+//Items
+item.dankNull0.name=/dank/null/
+item.dankNull1.name=/dank/null/MK II
+item.dankNull2.name=/dank/null/MK III
+item.dankNull3.name=/dank/null/MK IV
+item.dankNull4.name=/dank/null/MK V
+item.dankNull5.name=/dank/null/MK VI
+item.dankNullPanel.name=RedStone /dank/null Panel
+item.dankNullPanel0.name=RedStone /dank/null Panel
+item.dankNullPanel1.name=Lapis /dank/null Panel
+item.dankNullPanel2.name=Iron /dank/null Panel
+item.dankNullPanel3.name=Gold /dank/null Panel
+item.dankNullPanel4.name=Diamond /dank/null Panel
+item.dankNullPanel5.name=Emerald /dank/null Panel
+item.rawCarbon.name=Raw Carbon
+item.carbonRod.name=Carbon NanoTube
+item.carbonRod0.name=Carbon NanoTube
+item.carbonRod1.name=RedStone Carbon Rod
+item.carbonRod2.name=Lapis Carbon Rod
+item.carbonRod3.name=Iron Carbon Rod
+item.carbonRod4.name=Gold Carbon Rod
+item.carbonRod5.name=Diamond Carbon Rod
+item.carbonRod6.name=Emerald Carbon Rod
+item.p455w0rdshield.name=p455w0rd's Shield
+item.bucketXpjuice.name=Bucket O' Xp
+item.carbon_helmet.name=Carbon Helm
+item.carbon_chestplate.name=Carbon Chestplate
+item.carbon_leggings.name=Carbon Greaves
+item.carbon_boots.name=Carbon Sabatons
+
+//Blocks
+tile.compressorBlock.name=Compressor
+tile.batteryBlock.name=Battery
+tile.furnaceBlock.name=Furnace
+tile.dankNullBlock.name=/dank/null
+tile.partTerminal.name=ME Terminal
+tile.xpjuice.name=Liquid Experience
+tile.solarPanelBlock.name=Solar Panel
+tile.carbonBlock.name=Carbon Block
+tile.netherCarbonOreBlock.name=Raw Carbon Ore
+
+//Fluid
+fluid.xpjuice.name=Liquid Experience
+
+//Creative Tab Title
+itemGroup.p455w0rdsthings=p455w0rd's Things
+
+//Entities
+entity.p455w0rdsthings.enderman2.name=Enderman
+
+//Acheivements
+achievement.carbonAchievement=Carbon: Don’t Date Without It
+achievement.carbonAchievement.desc=Smelt a block of coal into a chunk of raw Carbon
+achievement.nanoTubeAchievement=Graphine On A Roll
+achievement.nanoTubeAchievement.desc=Craft a carbon nanoTube from 9 Raw Carbon
+achievement.redStoneRodAchievement=Infrequent Strength
+achievement.redStoneRodAchievement.desc=With 8 RedStone Dust and 1 Nano Tube, Craft a RedStone Carbon Rod
+achievement.lapisRodAchievement=[lapis rod ach]
+achievement.lapisRodAchievement.desc=With 8  and 1 Nano Tube, Craft a Lapis Carbon Rod
+achievement.ironRodAchievement=[iron rod ach]
+achievement.ironRodAchievement.desc=With 8  and 1 Nano Tube, Craft an Iron Carbon Rod
+achievement.goldRodAchievement=[gold rod ach]
+achievement.goldRodAchievement.desc=With 8  and 1 Nano Tube, Craft a Gold Carbon Rod
+achievement.diamondRodAchievement=[diamond rod ach]
+achievement.diamondRodAchievement.desc=With 8  and 1 Nano Tube, Craft a Diamond Carbon Rod
+achievement.emeraldRodAchievement=[emerald rod ach]
+achievement.emeraldRodAchievement.desc=With 8  and 1 Nano Tube, Craft a RedStone Carbon Rod
+achievement.redStonePaneAchievement[redstone pane ach]
+achievement.redStonePaneAchievement.desc=[redstone pane ach desc]

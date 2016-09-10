@@ -1,0 +1,16 @@
+[
+{
+  "modid": "p455w0rdsthings",
+  "name": "p455w0rd's Things",
+  "description": "Stuff for 1.9",
+  "version": "1.10.2-0.0.19a",
+  "mcversion": "1.10.2",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["p455w0rd aka TheRealp455w0rd"],
+  "credits": "p455w0rd",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
